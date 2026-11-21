@@ -12,19 +12,31 @@
       name="description"
       content="Plan a sequence of webhook attempts with response codes, retry limits, and a delivery ID cache."
     />
-    <link rel="canonical" href="https://musabukhari237.github.io/replay-envelope/" />
+    <link
+      rel="canonical"
+      href="https://musabukhari237.github.io/replay-envelope/"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Model webhook retries and deduplication | Replay Envelope" />
+    <meta
+      property="og:title"
+      content="Model webhook retries and deduplication | Replay Envelope"
+    />
     <meta
       property="og:description"
       content="Plan a sequence of webhook attempts with response codes, retry limits, and a delivery ID cache."
     />
-    <meta property="og:url" content="https://musabukhari237.github.io/replay-envelope/" />
+    <meta
+      property="og:url"
+      content="https://musabukhari237.github.io/replay-envelope/"
+    />
     <meta
       property="og:image"
       content="https://musabukhari237.github.io/replay-envelope/preview.png"
     />
-    <meta property="og:image:alt" content="Replay Envelope displaying a synthetic example result" />
+    <meta
+      property="og:image:alt"
+      content="Replay Envelope displaying a synthetic example result"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="app.css" />
@@ -35,10 +47,16 @@
   <body>
     <a class="skip" href="#workspace">Skip to workspace</a>
     <header>
-      <a class="brand" href="./"><img src="logo.svg" alt="" />Replay Envelope</a>
+      <a class="brand" href="./"
+        ><img src="logo.svg" alt="" />Replay Envelope</a
+      >
       <nav aria-label="Main">
         <a href="#guide">How to use</a
-        ><a class="repo" href="https://github.com/MusaBukhari237/replay-envelope">GitHub ↗</a>
+        ><a
+          class="repo"
+          href="https://github.com/MusaBukhari237/replay-envelope"
+          >GitHub ↗</a
+        >
       </nav>
     </header>
     <main>
@@ -47,8 +65,8 @@
           <p class="category">Webhook simulator</p>
           <h1>Give retries a rehearsal.</h1>
           <p class="description">
-            Explore backoff, rate limits, and duplicate deliveries on a timeline before wiring a
-            webhook.
+            Explore backoff, rate limits, and duplicate deliveries on a timeline
+            before wiring a webhook.
           </p>
         </div>
         <figure class="scene diagram">
@@ -71,24 +89,40 @@
                 maxlength="100000"
                 spellcheck="false"
               ></textarea></label
-            ><label>Maximum attempts<input id="attempts" type="number" value="4" /></label
-            ><label>Initial retry delay (s)<input id="base" type="number" value="5" /></label
-            ><label>Backoff cap (s)<input id="cap" type="number" value="60" /></label
-            ><label>Success cache TTL (s)<input id="ttl" type="number" value="120" /></label>
+            ><label
+              >Maximum attempts<input
+                id="attempts"
+                type="number"
+                value="4" /></label
+            ><label
+              >Initial retry delay (s)<input
+                id="base"
+                type="number"
+                value="5" /></label
+            ><label
+              >Backoff cap (s)<input id="cap" type="number" value="60" /></label
+            ><label
+              >Success cache TTL (s)<input id="ttl" type="number" value="120"
+            /></label>
           </div>
           <div class="actions">
             <button type="button" id="run">Simulate delivery</button
-            ><button type="button" id="sample" class="quiet">Load retry example</button>
+            ><button type="button" id="sample" class="quiet">
+              Load retry example
+            </button>
           </div>
           <small
-            >The fixture uses seconds from an arbitrary start time. Each incoming event supplies an
-            ID, an arrival time and mock response codes. A delivery in progress or cached after
-            success suppresses matching arrivals.</small
+            >The fixture uses seconds from an arbitrary start time. Each
+            incoming event supplies an ID, an arrival time and mock response
+            codes. A delivery in progress or cached after success suppresses
+            matching arrivals.</small
           >
         </section>
         <section class="panel" aria-labelledby="result-title" id="output-panel">
           <h2 id="result-title" tabindex="-1">Delivery timeline</h2>
-          <p class="result-status" id="result-status" aria-live="polite">Ready when you are</p>
+          <p class="result-status" id="result-status" aria-live="polite">
+            Ready when you are
+          </p>
           <div class="result" id="result">
             <p class="result-summary" aria-live="polite">
               Load an example or paste your own input.
@@ -108,7 +142,8 @@
     <footer>
       <span
         >Replay Envelope ·
-        <a href="https://github.com/MusaBukhari237/replay-envelope/blob/main/LICENSE"
+        <a
+          href="https://github.com/MusaBukhari237/replay-envelope/blob/main/LICENSE"
           >MIT licensed</a
         ></span
       ><span class="credits"
